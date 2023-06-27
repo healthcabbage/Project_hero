@@ -5,21 +5,19 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public Vector2 inputVec;
+    public float speed;
 
     Rigidbody2D rigid;
-
-    public float speed;
+    SpriteRenderer spriter;
+    Animator anim;
 
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
-    }
-    void Start()
-    {
-        
+        spriter = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
-    
     void Update()
     {
         inputVec.x = Input.GetAxisRaw("Horizontal");
@@ -30,5 +28,15 @@ public class Player : MonoBehaviour
     {
         Vector2 nextVector = inputVec.normalized * speed * Time.fixedDeltaTime;
         rigid.MovePosition(rigid.position + nextVector);
+    }
+
+    void LateUpdate()
+    {
+        anim.SetFloat("Speed", inputVec.magnitude);
+
+        if (inputVec.x != 0)
+        {
+            spriter.flipX = inputVec.x < 0;
+        }
     }
 }
