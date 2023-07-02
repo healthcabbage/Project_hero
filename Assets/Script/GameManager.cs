@@ -5,6 +5,11 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
+    public float gameTime;
+    public float maxGameTime = 2 * 10f;
+
+    public PoolManager pool;
     public Player player;
 
     private void Awake()
@@ -17,6 +22,16 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void Update()
+    {
+        gameTime += Time.deltaTime;
+
+        if (gameTime > 0.2f)
+        {
+            gameTime = 0;
         }
     }
 }
