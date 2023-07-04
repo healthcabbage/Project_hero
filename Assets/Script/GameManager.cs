@@ -25,13 +25,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Update()
+    void Update()
     {
         gameTime += Time.deltaTime;
 
-        if (gameTime > 0.2f)
+        if (gameTime > maxGameTime)
         {
-            gameTime = 0;
+            gameTime = maxGameTime;
         }
     }
 }
