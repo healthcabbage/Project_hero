@@ -52,4 +52,9 @@ public class Player : MonoBehaviour
             spriter.flipX = inputVec.x < 0;
         }
     }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        
+    }
 }

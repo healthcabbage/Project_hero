@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 125113fae444b45438f6e0f7d056dfe9, type: 3}
+  m_Name: Knight
+  m_EditorClassIdentifier: 
+  playertype: 0
+  playerid: 0
+  JobName: "\uAE30\uC0AC"
+  jobPersonal: "\uC591\uC190\uAC80\uC744 \uC0AC\uC6A9\uD558\uC5EC \uC801\uC744 \uACF5\uACA9\uD558\uB294
+    \uD3EC\uC9C0\uC158\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4.\n\uCD08\uBCF4\uC790\uB4E4\uC5D0\uAC8C
+    \uCD94\uCC9C\uD558\uB294 \uC9C1\uC5C5\uC785\uB2C8\uB2E4.\n"
+  JobIcon: {fileID: -1413294825, guid: 99a24620d31e5ce4e823c32d11e17c2c, type: 3}
+  hp: 100
+  mp: 20
+  speed: 5
+  critical: 10
+  skillIcon: {fileID: -38345435, guid: 0d5e657ee5a074e4baa53d5b248a01d2, type: 3}
+  skillname: "\uBC15\uC2A4 \uB358\uC9C0\uAE30"
+  skillPersonal: "\uC804\uBC29\uC5D0 \uBC15\uC2A4 \uB358\uC9C0\uAE30"
