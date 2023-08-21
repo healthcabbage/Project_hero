@@ -15,14 +15,21 @@ MonoBehaviour:
   playertype: 0
   playerid: 0
   JobName: "\uAE30\uC0AC"
-  jobPersonal: "\uC591\uC190\uAC80\uC744 \uC0AC\uC6A9\uD558\uC5EC \uC801\uC744 \uACF5\uACA9\uD558\uB294
-    \uD3EC\uC9C0\uC158\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4.\n\uCD08\uBCF4\uC790\uB4E4\uC5D0\uAC8C
-    \uCD94\uCC9C\uD558\uB294 \uC9C1\uC5C5\uC785\uB2C8\uB2E4.\n"
+  jobPersonal: 'HP : {0}
+
+    MP : {0}
+
+    Speed : {0}
+
+    Critical : {0}%'
   JobIcon: {fileID: -1413294825, guid: 99a24620d31e5ce4e823c32d11e17c2c, type: 3}
   hp: 100
   mp: 20
   speed: 5
   critical: 10
-  skillIcon: {fileID: -38345435, guid: 0d5e657ee5a074e4baa53d5b248a01d2, type: 3}
-  skillname: "\uBC15\uC2A4 \uB358\uC9C0\uAE30"
-  skillPersonal: "\uC804\uBC29\uC5D0 \uBC15\uC2A4 \uB358\uC9C0\uAE30"
+  skillIcon: {fileID: -8390244, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
+  skillname: "\uC77C\uC790\uBCA0\uAE30"
+  Specialskillicon: {fileID: -8390244, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
+  Specialskillname: 
+  skillPersonal: "\uC591\uC190\uAC80\uC744 \uD718\uB458\uB7EC \uC801\uC744 \uBCA0\uC5B4\uB0C5\uB2C8\uB2E4."
+  SpecialSkillPersonal: 

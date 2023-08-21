@@ -24,7 +24,11 @@ public class PlayerData : ScriptableObject
     [Header("# show start skill")]
     public Sprite skillIcon;
     public string skillname;
+    public Sprite Specialskillicon;
+    public string Specialskillname;
 
     [TextArea]
     public string skillPersonal;
+    [TextArea]
+    public string SpecialSkillPersonal;
 }
