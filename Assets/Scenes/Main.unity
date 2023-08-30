@@ -22738,6 +22738,17 @@ MonoBehaviour:
   speed: 3
   scanner: {fileID: 0}
   hands: []
+  checkdata: 0
+  datas:
+  - {fileID: 11400000, guid: 81fb92552384c0843b6da4ec6a9b45da, type: 2}
+  - {fileID: 11400000, guid: 8dd05c7ec7a754840904185321b70133, type: 2}
+  - {fileID: 11400000, guid: 226cfa4c2b527ae47888b8bd5f07e1bc, type: 2}
+  - {fileID: 11400000, guid: d5574c19ba709d6449ef0d750917a2c0, type: 2}
+  - {fileID: 11400000, guid: 56d5fffb916d23144b556665fdcd32b4, type: 2}
+  - {fileID: 11400000, guid: 8c1656e2e5dc1b44b8d6500682405df8, type: 2}
+  - {fileID: 11400000, guid: 464c268c1f0315f4a84461943504bfee, type: 2}
+  - {fileID: 11400000, guid: a86eae400aae1e443888366782a8a520, type: 2}
+  data: {fileID: 0}
 --- !u!95 &1823236979
 Animator:
   serializedVersion: 5
@@ -22748,7 +22759,7 @@ Animator:
   m_GameObject: {fileID: 1823236973}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1247d4ad608bb2846bbe2d857d2b7a63, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

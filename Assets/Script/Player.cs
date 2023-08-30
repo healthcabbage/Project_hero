@@ -12,6 +12,10 @@ public class Player : MonoBehaviour
     Rigidbody2D rigid;
     SpriteRenderer spriter;
     Animator anim;
+    public int checkdata;
+
+    public PlayerData[] datas;
+    public PlayerData data;
 
     void Awake()
     {
@@ -20,6 +24,51 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         scanner = GetComponent<Scanner>();
         hands = GetComponentsInChildren<Hand>(true);
+
+        Check();
+    }
+
+    void Start()
+    {
+        
+    }
+
+    private void OnEnable()
+    {
+        anim.runtimeAnimatorController = data.anim;
+    }
+
+    void Check()
+    {
+        PlayerPrefs.GetInt("JobID", checkdata);
+
+        switch(checkdata)
+        {
+            case 0:
+                data = datas[0];
+                break;
+            case 1:
+                data = datas[1];
+                break;
+            case 2:
+                data = datas[2];
+                break;
+            case 3:
+                data = datas[3];
+                break;
+            case 4:
+                data = datas[4];
+                break;
+            case 5:
+                data = datas[5];
+                break;
+            case 6:
+                data = datas[6];
+                break;
+            case 7:
+                data = datas[7];
+                break;
+        }
     }
 
     void Update()
