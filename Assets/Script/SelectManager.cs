@@ -10,7 +10,7 @@ public class SelectManager : MonoBehaviour
 
     public void MoveStage()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Stage");
     }
 
     public void MoveStage2()

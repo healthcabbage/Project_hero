@@ -17,13 +17,20 @@ public class PlayerData : ScriptableObject
 
     [Header("# Player Data")]
     public int hp;
-    public int mp;
+    public int atk;
     public float speed;
     public float critical;
     public RuntimeAnimatorController anim;
     //shop에서 뽑기로 얻게되면 활성화되서 보이게 하기
     //아직 연결되지 않아 데이터만 추가
     public bool isActive;
+    [Header("# shop show data")]
+    public int specialcooltime;
+    public int expplus;
+    public int coinplus;
+    public int itemdragrage;
+    public int shopmaking;
+    public int weaponspeed;
 
     [Header("# show start skill")]
     public Sprite skillIcon;

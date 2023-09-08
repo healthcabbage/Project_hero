@@ -43,7 +43,7 @@ public class ShowPlayerData : MonoBehaviour
         SpecialSkillpersonal = texts[7];
 
         Jobname.text = data.JobName;
-        JobPersonal.text = string.Format(data.jobPersonal, data.hp, data.mp, data.speed, data.critical * 100);
+        JobPersonal.text = string.Format(data.jobPersonal, data.hp, data.atk, data.speed, data.critical * 100);
         Skillname.text = data.skillname;
         Skillpersonal.text = data.skillPersonal;
         SpecialSkill.text = data.Specialskillname;
