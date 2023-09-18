@@ -24,7 +24,7 @@ MonoBehaviour:
     Critical : {3}%'
   JobIcon: {fileID: -1413294825, guid: 99a24620d31e5ce4e823c32d11e17c2c, type: 3}
   hp: 100
-  atk: 0
+  atk: 40
   speed: 5
   critical: 0.1
   anim: {fileID: 9100000, guid: 1247d4ad608bb2846bbe2d857d2b7a63, type: 2}

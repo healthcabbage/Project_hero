@@ -38,15 +38,16 @@ public class LevelUp : MonoBehaviour
         {
             item.gameObject.SetActive(false);
         }
-        // 2. 그 중에서 랜덤하게 3개 아이템 활성화
-        int[] random = new int[3];
+        // 2. 그 중에서 랜덤하게 4개 아이템 활성화
+        int[] random = new int[4];
         while (true)
         {
             random[0] = Random.Range(0, items.Length);
             random[1] = Random.Range(0, items.Length);
             random[2] = Random.Range(0, items.Length);
+            random[3] = Random.Range(0, items.Length);
 
-            if (random[0] != random[1] && random[1] != random[2] && random[0] != random[2])
+            if (random[0] != random[1] && random[1] != random[2] && random[0] != random[2] && random[0] != random[3] && random[1] != random[3] && random[2] != random[3])
                 break;
         }
 
