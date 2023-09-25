@@ -24,7 +24,6 @@ public class PlayerData : ScriptableObject
     //shop에서 뽑기로 얻게되면 활성화되서 보이게 하기
     //아직 연결되지 않아 데이터만 추가
     public bool isActive;
-    [Header("# shop show data")]
     public int specialcooltime;
     public int expplus;
     public int coinplus;
