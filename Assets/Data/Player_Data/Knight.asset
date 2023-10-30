@@ -26,15 +26,19 @@ MonoBehaviour:
   hp: 100
   atk: 40
   speed: 5
-  critical: 0.1
+  critical: 2
   anim: {fileID: 9100000, guid: 1247d4ad608bb2846bbe2d857d2b7a63, type: 2}
-  isActive: 1
-  specialcooltime: 0
+  shop_hp: 0
+  shop_atk: 0
+  shop_speed: 0
+  shop_critical: 0
+  specialcooltime: 100
   expplus: 0
   coinplus: 0
   itemdragrage: 0
   shopmaking: 0
   weaponspeed: 0
+  isActive: 1
   skillIcon: {fileID: -181907988, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
   skillname: "\uAC80\uAE30 \uB0A0\uB9AC\uAE30"
   Specialskillicon: {fileID: -181907988, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}

@@ -25,6 +25,8 @@ public class Weapon : MonoBehaviour
             case 0:
                 transform.Rotate(Vector3.back * speed * Time.deltaTime);
                 break;
+            case 5:
+                break;
             default:
                 timer += Time.deltaTime;
                 if (timer > speed)
@@ -33,12 +35,6 @@ public class Weapon : MonoBehaviour
                     Fire();
                 }
                 break;
-        }
-
-        //test
-        if (Input.GetButtonDown("Jump"))
-        {
-            LevelUp(10, 1);
         }
     }
 
@@ -133,5 +129,11 @@ public class Weapon : MonoBehaviour
         bullet.position = transform.position;
         bullet.rotation = Quaternion.FromToRotation(Vector3.up, dir);
         bullet.GetComponent<Bullet>().Init(damage, count, dir);
+    }
+
+    void Attack()
+    {
+        Vector3 targetPos = player.transform.position;
+        
     }
 }

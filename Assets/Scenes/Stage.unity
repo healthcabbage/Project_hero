@@ -8088,6 +8088,7 @@ MonoBehaviour:
   - {fileID: 4604668307531682016, guid: bf80f12e9b2d9be4186618a178977f76, type: 3}
   - {fileID: 3931415919197257461, guid: 675337fc34e1d2c4abd06e3d5485b085, type: 3}
   - {fileID: 4773403876049723808, guid: 936ca78bcdd4a6b4085ac52de1868dc5, type: 3}
+  - {fileID: 4773403876049723808, guid: 936ca78bcdd4a6b4085ac52de1868dc5, type: 3}
 --- !u!4 &1035011788
 Transform:
   m_ObjectHideFlags: 0
@@ -17810,7 +17811,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -507.3748, y: -217}
+  m_AnchoredPosition: {x: -522, y: -217}
   m_SizeDelta: {x: 454.3065, y: 378.7199}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1471402984
@@ -17844,7 +17845,7 @@ MonoBehaviour:
 
     PickUp  :      {4}
 
-    ATKSPD  :      {5}'
+    Special  :     {5}'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e752e9fa71dd4f4b8cee559db8725ac, type: 2}
   m_sharedMaterial: {fileID: -1985625308808762184, guid: 0e752e9fa71dd4f4b8cee559db8725ac, type: 2}
@@ -17878,8 +17879,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -22640,7 +22641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a879f3429e1c3c840864e045b2081f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLive: 0
+  isLive: 1
   gameTime: 0
   maxGameTime: 20
   health: 0

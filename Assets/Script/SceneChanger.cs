@@ -9,4 +9,14 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("Start");
     }
+
+    public void moveSelect()
+    {
+        SceneManager.LoadScene("Select");
+    }
+
+    public void moveStage()
+    {
+        SceneManager.LoadScene("Stage");
+    }
 }

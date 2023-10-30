@@ -35,6 +35,16 @@ public class Item : MonoBehaviour
         switch (data.itemType)
         {
             case ItemData.ItemType.Melee:
+                switch(level)
+                {
+                    case 0:
+                        textDesc.text = string.Format("데미지 {0}% 증가", data.damages[level] * 100);
+                        break;
+                    case 1:
+                        textDesc.text = string.Format("데미지 {0}% 증가", data.damages[level] * 100);
+                        break;
+                }
+                break;
             case ItemData.ItemType.Range:
                 textDesc.text = string.Format(data.itemDesc, data.damages[level] * 100);
                 break;
