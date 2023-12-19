@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class LevelUp : MonoBehaviour
 {
     RectTransform rect;
     Item[] items;
+    public TMP_Text state_text;
 
     private void Awake()
     {
@@ -16,6 +18,7 @@ public class LevelUp : MonoBehaviour
     public void Show()
     {
         Next();
+        State();
         rect.localScale = Vector3.one;
         GameManager.instance.Stop();
     }
@@ -66,5 +69,10 @@ public class LevelUp : MonoBehaviour
             }
 
         }
+    }
+
+    void State()
+    {
+        state_text.text = string.Format("{0}\n{1}\n{2}\n{3}\n{4}\n{5}", GameManager.instance.maxhealth, GameManager.instance.player.atk, GameManager.instance.player.speed, GameManager.instance.player.critical, GameManager.instance.player.itemdrag, GameManager.instance.maxSep); ;
     }
 }

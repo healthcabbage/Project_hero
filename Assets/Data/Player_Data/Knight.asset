@@ -28,6 +28,7 @@ MonoBehaviour:
   speed: 5
   critical: 2
   anim: {fileID: 9100000, guid: 1247d4ad608bb2846bbe2d857d2b7a63, type: 2}
+  ch_image: {fileID: 0}
   shop_hp: 0
   shop_atk: 0
   shop_speed: 0
@@ -37,7 +38,7 @@ MonoBehaviour:
   coinplus: 0
   itemdragrage: 0
   shopmaking: 0
-  weaponspeed: 0
+  rerole: 0
   isActive: 1
   skillIcon: {fileID: -181907988, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
   skillname: "\uAC80\uAE30 \uB0A0\uB9AC\uAE30"

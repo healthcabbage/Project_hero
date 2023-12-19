@@ -19,4 +19,9 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("Stage");
     }
+
+    public void moveShop()
+    {
+        SceneManager.LoadScene("Shop");
+    }
 }

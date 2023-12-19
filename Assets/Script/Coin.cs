@@ -4,22 +4,37 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    public int coin;
+    public static Coin instance;
+    public float coin;
     public TotalData data;
+    public float keepcoin;
 
-    public void AddCoin(int num)
+    //싱글턴으로 만들기
+    private void Awake()
     {
-        coin += num;
-
-        data.total_Coin = coin;
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(instance);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
-    public void TotalCoin(int num)
+    public void AddCoin(float num)
+    {
+        keepcoin = coin;
+        coin += num;
+    }
+
+    public void TotalCoin(float num)
     {
         num = data.total_Coin;
     }
     
-    public void MinusCoin(int num)
+    public void MinusCoin(float num)
     {
         coin -= num;
 

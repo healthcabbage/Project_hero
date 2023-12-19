@@ -6,7 +6,7 @@ using UnityEngine;
 public class TotalData : ScriptableObject
 {
     [Header("# Total Coin")]
-    public int total_Coin;
+    public float total_Coin;
 
     [Header("# Player Upgrade")]
     public int[] hp_up;

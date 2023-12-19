@@ -5,7 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public Vector2 inputVec;
-    public float speed;
     public Scanner scanner;
     public Hand[] hands;
 
@@ -17,6 +16,13 @@ public class Player : MonoBehaviour
     public PlayerData[] datas;
     public PlayerData data;
 
+    //player data
+    public float atk;
+    public float speed;
+    public float critical;
+    public float itemdrag;
+
+
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -26,6 +32,7 @@ public class Player : MonoBehaviour
         hands = GetComponentsInChildren<Hand>(true);
 
         Check();
+        State();
     }
 
     void Start()
@@ -78,6 +85,11 @@ public class Player : MonoBehaviour
 
         inputVec.x = Input.GetAxisRaw("Horizontal");
         inputVec.y = Input.GetAxisRaw("Vertical");
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GameManager.instance.Spskill();
+        }
     }
 
     void FixedUpdate()
@@ -104,6 +116,27 @@ public class Player : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        
+        if (!GameManager.instance.isLive)
+            return;
+
+        GameManager.instance.health -= Time.deltaTime * 10;
+
+        if (GameManager.instance.health < 0)
+        {
+            for (int index = 2; index < transform.childCount; index++)
+            {
+                transform.GetChild(index).gameObject.SetActive(false);
+            }
+
+            anim.SetTrigger("Dead");
+            GameManager.instance.GameOver();
+        }
+    }
+
+    void State()
+    {
+        speed = data.speed + data.shop_speed;
+        atk = data.atk + data.shop_atk;
+        critical = data.critical + data.shop_critical;
     }
 }

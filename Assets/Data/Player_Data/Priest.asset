@@ -24,10 +24,21 @@ MonoBehaviour:
     Critical : {3}%'
   JobIcon: {fileID: 0}
   hp: 0
-  mp: 0
+  atk: 0
   speed: 0
   critical: 0
   anim: {fileID: 0}
+  shop_hp: 0
+  shop_atk: 0
+  shop_speed: 0
+  shop_critical: 0
+  specialcooltime: 100
+  expplus: 0
+  coinplus: 0
+  itemdragrage: 0
+  shopmaking: 0
+  weaponspeed: 0
+  rerole: 0
   isActive: 0
   skillIcon: {fileID: 0}
   skillname: 

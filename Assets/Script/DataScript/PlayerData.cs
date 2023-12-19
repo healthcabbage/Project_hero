@@ -17,16 +17,17 @@ public class PlayerData : ScriptableObject
 
     [Header("# Player Show Base Data")]
     public int hp;
-    public double atk;
+    public int atk;
     public int speed;
     public int critical;
 
     [Header("# Game Data Set")]
     public RuntimeAnimatorController anim;
+    public Sprite ch_image;
 
     [Header("# Shop Upgrade Data")]
     public int shop_hp;
-    public double shop_atk;
+    public int shop_atk;
     public int shop_speed;
     public int shop_critical;
     public int specialcooltime;
@@ -34,7 +35,6 @@ public class PlayerData : ScriptableObject
     public int coinplus;
     public int itemdragrage;
     public int shopmaking;
-    public int weaponspeed;
     public int rerole;
 
     [Header("# Shop Gacha Data")]

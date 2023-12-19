@@ -24,10 +24,21 @@ MonoBehaviour:
     Critical : {3}%'
   JobIcon: {fileID: -1746337116, guid: 99a24620d31e5ce4e823c32d11e17c2c, type: 3}
   hp: 80
-  mp: 0
+  atk: 0
   speed: 10
   critical: 0
   anim: {fileID: 0}
+  ch_image: {fileID: 0}
+  shop_hp: 0
+  shop_atk: 0
+  shop_speed: 0
+  shop_critical: 0
+  specialcooltime: 100
+  expplus: 0
+  coinplus: 0
+  itemdragrage: 0
+  shopmaking: 0
+  rerole: 0
   isActive: 0
   skillIcon: {fileID: -181907988, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
   skillname: "\uB2E8\uAC80\uD22C\uCC99"

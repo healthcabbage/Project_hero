@@ -25,6 +25,9 @@ public class Weapon : MonoBehaviour
             case 0:
                 transform.Rotate(Vector3.back * speed * Time.deltaTime);
                 break;
+            case 1:
+
+                break;
             case 5:
                 break;
             default:
